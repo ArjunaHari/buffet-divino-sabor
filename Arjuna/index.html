@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: space-around;
+            row-gap: 20px;
+            justify-items: center;
+            
+            
+        }
+        .item{
+            width: 317px;
+            height: 160px;
+            border: 1px solid ;
+            border-radius: 15px;
+            background-color: #276359;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item-6{
+            background-color: #468BCB;
+        }
+        .emg{
+            width: 130px;
+            
+        }
+       h1{
+        text-align: center;
+        grid-area: 1 / 1 / -3 / 3;
+        align-items: center;
+       }
+       main{
+        display: grid;
+        grid-template-columns: 20% 70% 10%;
+       }
+       .column-left{
+        background-color:#8EBBA7 ;
+       }
+       .column-right{
+        background-color:#8EBBA7 ;
+       }
+    </style>
+</head>
+<body>
+    <main>
+    
+    
+    <div class="column-left">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="container">
+        <h1>Olá, nome da pessoa</h1> 
+        <div class="item item-1">Clientes <img class="emg" src="img/user.png" alt="user"></div>
+        <div class="item item-2">Configurar cardápio<img class="emg" src="img/Playlist.png" alt="user"></div>
+        <div class="item item-3">Estoque<img class="emg" src="img/caixa.png" alt="user"></div>
+        <div class="item item-4">Produtos<img class="emg" src="img/Shopping Cart.png" alt="user"></div>
+        <div class="item item-5">Pedidos<img class="emg" src="img/Purchase Order.png" alt="user"></div>
+        <div class="item item-6">Agenda<img class="emg" src="img/Google Calendar.png" alt="user"></div>
+    </div>
+    <div class="column-right"></div>
+    
+</main>
+</body>
+</html>
